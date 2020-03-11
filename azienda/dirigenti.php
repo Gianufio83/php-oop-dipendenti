@@ -3,7 +3,7 @@
   class Dirigenti extends Dipendenti
   {
     private $bonus;
-    private $investimenti;
+    // private $investimenti;
     public function setBonus($_bonus)
     {
       if (!is_numeric($_bonus)) {

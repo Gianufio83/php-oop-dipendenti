@@ -3,7 +3,7 @@
   require_once 'dirigenti.php';
   require_once 'amministrativo.php';
   try {
-    $dipendente_1 = new Dipendenti(12345, 'nnnnnn','ggggggg');
+    $dipendente_1 = new Dipendenti(12345, 'Mario','Rossi');
   } catch (Exception $e) {
     echo 'Errore: ' . $e->getMessage();
   }
@@ -11,7 +11,7 @@
   $dipendente_1->getStipendio($dipendente_1->getOrario(), 60);
   var_dump($dipendente_1);
 try {
-  $dirigente_1 = new Dirigenti(125454577, 'nnnnnnggg', 'gggggggyyy');
+  $dirigente_1 = new Dirigenti(125454577, 'Giorgio', 'Verdi');
 } catch (Exception $e) {
   echo 'Errore: ' . $e->getMessage();
 }
